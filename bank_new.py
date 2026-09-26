@@ -48,6 +48,7 @@ while True:
     print("Banking Application")
     print("1. Login")
     print("2. Create Account")
+    print("3. Exit")
 
     choice=int(input("Enter Your Choice:"))
     if choice == 1:
@@ -148,6 +149,7 @@ while True:
             else:
                 savings=SavingsAccount(name, pin, balance)
                 accounts.append(savings)
+                print("Savings account Successfully Created")
 
         elif create_choice == 2:
             print("Create Current Account")
@@ -159,6 +161,7 @@ while True:
             else:
                 current=CurrentAccount(name,pin,balance)
                 accounts.append(current)
+                print("Current account Successfully created")
         else:
             print("Invalid Selection")
 
